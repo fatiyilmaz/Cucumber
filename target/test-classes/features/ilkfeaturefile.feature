@@ -1,10 +1,20 @@
+@google_search
 Feature: ilk feature file
 
+  @iphone
   Scenario: TC01_google_iphone_arama
-
+    #Describe the behaviour
   Given kullanici google'a gider
   When kullanici iphone icin arama yapar
   Then sonuclarda iphone oldugunu dogrular
+  And close the application
+
+    @tesla
+  Scenario: TC02_google_iphone_arama
+  Given kullanici google'a gider
+  When kullanici tesla icin arama yapar
+  Then sonuclarda tesla oldugunu dogrular
+  Then close the application
 
 # 1.Her feature file, Feature: kelimesi ile baslamak zorundadir. Feature = Epic
 # 2.Her bir file da, yalniz bir Feature: kullanilabilir.

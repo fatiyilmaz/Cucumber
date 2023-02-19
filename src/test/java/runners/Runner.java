@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "./src/test/resources/features",//features folder path
-        glue = "stepdefinitons"//stepdefinitions path
+        features = "./src/test/resources/features", //features folder path
+        glue = "stepdefinitions", //stepdefinitions path
+        tags = "@iphone or @tesla"
 )
 public class Runner {
-
-
 }
-//Bu sinif Test Caseleri RUN etmek icin kullanilir.
-//Ve konfigurasyonlar icin kullanilir.
+
+//Bu sinif Test caseleri RUN etmek icin kullanilir
+//Ve konfigurasyonlar icin kullanilir
