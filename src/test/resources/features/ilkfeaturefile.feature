@@ -6,14 +6,12 @@ Feature: ilk feature file
   @iphone
   Scenario: TC01_google_iphone_arama
     #Describe the behaviour
-//  Given kullanici google'a gider
   When kullanici iphone icin arama yapar
   Then sonuclarda iphone oldugunu dogrular
   And close the application
 
     @tesla
   Scenario: TC02_google_iphone_arama
-//  Given kullanici google'a gider
   When kullanici tesla icin arama yapar
   Then sonuclarda tesla oldugunu dogrular
   Then close the application
@@ -31,3 +29,6 @@ Feature: ilk feature file
 #  9. Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir,
 #     tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir.
 # 10.Background: Her bir Scenario kelimesinden ONCE tek bir sefer calisir.
+# 11.dryRun = false -> dryRun yokmus gibi normal sekilde calisir. Yani tum adimlari tek tek browserda acar.
+#    dryRun = true  -> Yeni bir STEP(adim) eklendiginde sadece step definitionslari olusturmak icin kullanilir.
+#    kullanilma sebebi zamandan tasarrufdur.
