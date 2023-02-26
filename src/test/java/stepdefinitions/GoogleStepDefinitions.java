@@ -56,4 +56,5 @@ public class GoogleStepDefinitions {
     public void sonuclarin_icerdigini_dogrular(String string) {
         Assert.assertTrue(Driver.getDriver().getPageSource().contains(string));
     }
+
 }

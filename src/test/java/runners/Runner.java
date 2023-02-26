@@ -6,10 +6,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {
+                "pretty",  //raporlarin daha okunakli olmasi icin
+                "html:target/default-cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
+        monochrome = true,  //raporlarin konsolda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features", //features folder path
         glue = "stepdefinitions", //stepdefinitions path
-        tags = "@scenario_outline_1",
-        dryRun = false
+        tags = "@personel_olusturma",  //calistirmak istedigim tag
+        dryRun = false  //cok hizli sekilde hatalari gosterir
 )
 public class Runner {
 }
