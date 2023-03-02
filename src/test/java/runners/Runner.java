@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
         },
         monochrome = true,  //raporlarin konsolda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features", //features folder path
-        glue = "stepdefinitions", //stepdefinitions path
-        tags = "@personel_olusturma",  //calistirmak istedigim tag
-        dryRun = false  //cok hizli sekilde hatalari gosterir
+        glue = {"stepdefinitions","hooks"}, //stepdefinitions path
+        tags = "@data_tables",  //calistirmak istedigim tag
+        dryRun = false //cok hizli sekilde hatalari gosterir
 )
 public class Runner {
 }

@@ -1,0 +1,18 @@
+SCENARIO OUTLINE VS DATA TABLES
+
+Scenario Outline ile DDT yapilabilir. (Data Driven Test)
+Test adimlarini(STEPS) data resuable yapmak icin kullanilir.
+En cok kullanilan Cucumber ozelliklerinden biridir.
+Examples kelimesi veri girisleri icin kullanilmalidir.
+Step definitionslardaki data tipi STRING'dir.
+Examples kelimesi en sonda kullanilir.
+
+
+Data Tables ile DDT yapilabilir. (Data Driven Test)
+Test adimlarini(STEPS) data resuable yapmak icin kullanilir.
+Scenario Outline kadar yaygin degildir.
+Examples kelimesi kullanilmaz.
+Step Definitionslardaki data tipi DATATABLE'dir.
+Data Tablelar ara adimlarda da (STEPS) kullanilabilir.
+
+NOT -> Datatables ve Scenario Outline birlikle kullanilabilir.
