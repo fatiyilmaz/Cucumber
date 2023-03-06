@@ -1,0 +1,19 @@
+Data driven, Keyword driven ve Hybrid framework arasindaki farklar nelerdir?
+
+*DATA DRIVEN:
+  Cok sayida data ile test etme islemidir. Bu yontemde, cok sayida data ile testler yapilir ve hepsinin gecmesi beklenir.
+  Bir test case fail ederse, developer duzeltir, tester tekrar test eder. Tum test caseler gecene kadar bu islem devam
+  eder. Excel data, database data, xml data, scenario outline data,...
+
+*KEYWORD DRIVEN:
+  Keyword driven de excel isin merkezindedir.
+  Test Step:
+  Test Object: Web Page object/element, Username & Password...
+  Action: Such as click, open browser, input etc...
+  Test Data:
+
+*HYBRID FRAMEWORK:
+  Behavior Driven Testing(BDD ) + Data Driven Testing(DDT) = Hybrid Framework
+
+*BDD FRAMEWORK:
+  Once behavior (fonksiyonel, ozellik, davranis) tanimlanir, sonrasinda kod yazilir.

@@ -10,12 +10,14 @@ import org.junit.runner.RunWith;
                 "pretty",  //raporlarin daha okunakli olmasi icin
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failed_scenarios.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome = true,  //raporlarin konsolda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features", //features folder path
         glue = {"stepdefinitions","hooks"}, //stepdefinitions path
-        tags = "@data_tables",  //calistirmak istedigim tag
+        tags = "@failed_scenario",  //calistirmak istedigim tag
         dryRun = false //cok hizli sekilde hatalari gosterir
 )
 public class Runner {
@@ -23,3 +25,4 @@ public class Runner {
 
 //Bu sinif Test caseleri RUN etmek icin kullanilir
 //Ve konfigurasyonlar icin kullanilir
+//Runner class, features file lar ile step definitionsi birbirlerine baglar

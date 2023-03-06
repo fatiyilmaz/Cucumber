@@ -1,5 +1,6 @@
 @personel_olusturma
 Feature: personel_olusturma
+  @testrunner
   Scenario Outline: TC01_personel_olustur
     Given kullanici "https://editor.datatables.net/" giderr
     When kullanici new butonuna tiklar

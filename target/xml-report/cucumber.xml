@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="5.118" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="data_tables" name="TC01_musteri_giris_testi" time="4.974">
+<testsuite name="Cucumber" time="31.26" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="hooks_test" name="TC01_google_iphone_arama" time="15.407">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.GoogleStepDefinitions.sonuclarin_icerdigini_dogrular(GoogleStepDefinitions.java:47)
+	at ✽.sonuclarin "karpuz" icerdigini dogrular(file:///C:/Users/yy890/IdeaProjects/batch103Cucember/./src/test/resources/features/day06_failed_scenarios.feature:11)
+]]>
+</failure>
 <system-out><![CDATA[
-Given kullanici "https://www.bluerentalcars.com/login" gider................passed
-When kullanici emaili ve sifresini girer....................................passed
+Given kullanici google'a gider..............................................passed
+When kullanici "iphone" icin arama yapar....................................passed
+Then sonuclarin "karpuz" icerdigini dogrular................................failed
+Then close the application..................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="hooks_test" name="TC02_google_tesla_arama" time="15.684">
+<system-out><![CDATA[
+Given kullanici google'a gider..............................................passed
+When kullanici "tesla" icin arama yapar.....................................passed
+Then sonuclarin "tesla" icerdigini dogrular.................................passed
+Then ekran goruntusu al.....................................................passed
 Then close the application..................................................passed
 ]]></system-out>
 </testcase>

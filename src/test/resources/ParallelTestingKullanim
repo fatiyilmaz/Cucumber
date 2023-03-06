@@ -1,0 +1,5 @@
+Oncelikle pom.xml de cucumber ile paralel testi mumkun kilan plug ins leri koyabiliriz.
+*Surefire plugin
+*Failsafe plugin
+Sonra birden fazla Runners olusturup, bu runner lari ayni anda maven commend ile calistirilarak paralel test yapilir.
+Terminalden maven projesini calistirmak icin : mvn clean verify
